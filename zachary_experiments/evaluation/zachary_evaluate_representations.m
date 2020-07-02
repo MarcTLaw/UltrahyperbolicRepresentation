@@ -3,7 +3,7 @@ clear all;
 directories = 1:5;
 
 evaluate_euclidean_representations = false
-time_dimensions = 2
+time_dimensions = 3
 
 min_rank = [];
 max_rank = [];
