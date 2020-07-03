@@ -2,14 +2,14 @@ clear all;
 
 evaluate_euclidean_representations = false
 time_dimensions = 4
-dimensionality_of_embedded_space = 7
+dimensionality_of_ambient_space = 7
 euclidean_dimension = 6
 lower_bound_score = [1, 10, 20];
 rho_score = [];
 if evaluate_euclidean_representations
     directory_name = strcat('nips_data/euclidean_',int2str(euclidean_dimension));
 else
-    directory_name = strcat('nips_data/d_', int2str(dimensionality_of_embedded_space), '_q_',int2str(time_dimensions));
+    directory_name = strcat('nips_data/d_', int2str(dimensionality_of_ambient_space), '_q_',int2str(time_dimensions));
 end
 load('C.mat');
 
