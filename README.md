@@ -23,7 +23,7 @@ python zachary_experiments.py
 - To train in the weighted graph setup (i.e. edge weights are not only 1), set the variable **weighted_version** to True. By default, the code considers the unweighted graph setup. 
 If **weighted_version** is set to True, the algorithm stops after 10000 iterations.
 
-- To train with the optimizer introduced in Section 4.1, set the variable **apply_standard_sgd** to True. By default, the code optimizes the pseudo-Riemannian optimizer introduced in Section 4.2.
+- To train with the optimizer introduced in Section 4.1, set the variable **apply_standard_sgd** to True. By default, the code exploits the pseudo-Riemannian optimizer introduced in Section 4.2.
 
 - To use the pseudo-Riemannian gradient (see Eq. (11) of the paper) as search direction, set the variable **use_pseudoRiemannian_gradient** to True. By default, the code uses the proposed descent direction introduced in Eq. (14) of the paper, except in the Riemannian case where the negative of the Riemannian gradient can be used as descent direction. 
 When the metric tensor is not positive definite, the optimizer should not converge when the pseudo-Riemannian gradient is used as search direction as explained in the paper.
@@ -38,7 +38,7 @@ The MATLAB evaluation script is provided in the file "zachary_evaluate_represent
 
 - To evaluate Euclidean representations optimized with the squared Euclidean distance, set the variable **evaluate_euclidean_representations** to True. By default, the script considers pseudo-hyperbolic cases. 
 
-- Set the variable **time_dimensions** to the appropriate number of time dimensions you want to evaluate 4-dimensional pseudo-hyperboloids with. For example, the directory "d_5_q_1" corresponds to the case with hyperbolic case (i.e. with 1 time dimension and 5-dimensional ambien space).
+- Set the variable **time_dimensions** to the appropriate number of time dimensions you want to evaluate 4-dimensional pseudo-hyperboloids with. For example, the directory "d_5_q_1" corresponds to the hyperbolic case (i.e. with 1 time dimension in a 5-dimensional ambient space).
 
 
 ## NIPS co-authorship dataset
@@ -52,7 +52,7 @@ python nips_dataset_experiments.py
 
 - We only considered the weighted graph setup for this experiment, so please keep the variable **weighted_version** to True except if you want to consider the unweighted graph setup. 
 
-- To train with the optimizer introduced in Section 4.1, set the variable **apply_standard_sgd** to True. By default, the code optimizes the pseudo-Riemannian optimizer introduced in Section 4.2.
+- To train with the optimizer introduced in Section 4.1, set the variable **apply_standard_sgd** to True. By default, the code exploits the pseudo-Riemannian optimizer introduced in Section 4.2.
 
 - To use the pseudo-Riemannian gradient (see Eq. (11) of the paper) as search direction, set the variable **use_pseudoRiemannian_gradient** to True. By default, the code uses the proposed descent direction introduced in Eq. (14) of the paper, except in the Riemannian case where the negative of the Riemannian gradient can be used as descent direction. 
 When the metric tensor is not positive definite, the optimizer should not converge when the pseudo-Riemannian gradient is used as search direction as explained in the paper.
@@ -70,7 +70,7 @@ The MATLAB evaluation script is provided in the file "nips_evaluate_representati
 
 - To evaluate Euclidean representations optimized with the squared Euclidean distance, set the variable **evaluate_euclidean_representations** to True. By default, the script considers pseudo-hyperbolic cases. Also choose the variable **euclidean_dimension** appropriately.
 
-- Set the variables **time_dimensions** and **dimensionality_of_ambient_space ** to the appropriate number of time dimensions and dimensionality of the ambient space. For example, the directory "d_7_q_1" corresponds to the hyperbolic case (i.e. with 1 time dimension and 7-dimensional ambien space).
+- Set the variables **time_dimensions** and **dimensionality_of_ambient_space** to the appropriate number of time dimensions and dimensionality of the ambient space. For example, the directory "d_7_q_1" corresponds to the hyperbolic case (i.e. with 1 time dimension in a 7-dimensional ambient space).
 
 
 
