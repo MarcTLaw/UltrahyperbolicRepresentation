@@ -9,7 +9,7 @@ We created one directory for each dataset: Zachary's karate club dataset and NIP
 ### Prerequisites
 
 The training code was tested with Python 3.6.7 and PyTorch 1.0.1.post2.
-The evaluation scripts were tested on Matlab_R2016b. 
+The evaluation scripts were tested with Matlab_R2016b and SciPy 1.5.0. 
 
 ## Zachary's karate club dataset
 
@@ -72,7 +72,10 @@ The MATLAB evaluation script is provided in the file "nips_evaluate_representati
 
 - Set the variables **time_dimensions** and **dimensionality_of_ambient_space** to the appropriate number of time dimensions and dimensionality of the ambient space. For example, the directory "d_7_q_1" corresponds to the hyperbolic case (i.e. with 1 time dimension in a 7-dimensional ambient space).
 
-
+We provide the same evaluation script in SciPy. Run the following code (in the evaluation directory):
+```
+python scipy_evaluation.py
+```
 
 ## Authors
 
