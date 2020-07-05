@@ -40,6 +40,10 @@ The MATLAB evaluation script is provided in the file "zachary_evaluate_represent
 
 - Set the variable **time_dimensions** to the appropriate number of time dimensions you want to evaluate 4-dimensional pseudo-hyperboloids with. For example, the directory "d_5_q_1" corresponds to the hyperbolic case (i.e. with 1 time dimension in a 5-dimensional ambient space).
 
+We provide the same evaluation script in SciPy. Run the following code (in the evaluation directory):
+```
+python scipy_evaluation.py
+```
 
 ## NIPS co-authorship dataset
 
